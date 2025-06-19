@@ -1,7 +1,6 @@
 
 USE prostatecare_kenya;
 
--- Users table for login and sign-up functionality
 CREATE TABLE users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
     full_name VARCHAR(100) NOT NULL,
@@ -12,7 +11,6 @@ CREATE TABLE users (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
--- Donations table to track donations
 CREATE TABLE donations (
     donation_id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NULL,
@@ -26,7 +24,7 @@ CREATE TABLE donations (
     FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE SET NULL
 );
 
--- Events table to store event details
+
 CREATE TABLE events (
     event_id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
@@ -40,7 +38,7 @@ CREATE TABLE events (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
--- Event registrations table to track user registrations for events
+
 CREATE TABLE event_registrations (
     registration_id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
@@ -51,7 +49,6 @@ CREATE TABLE event_registrations (
     UNIQUE (user_id, event_id)
 );
 
--- Contact messages table for contact form submissions
 CREATE TABLE contact_messages (
     message_id INT AUTO_INCREMENT PRIMARY KEY,
     full_name VARCHAR(100) NOT NULL,
@@ -61,14 +58,14 @@ CREATE TABLE contact_messages (
     sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Newsletter subscriptions table
+
 CREATE TABLE newsletter_subscriptions (
     subscription_id INT AUTO_INCREMENT PRIMARY KEY,
     email VARCHAR(255) UNIQUE NOT NULL,
     subscribed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Educational resources table to store articles, videos, and infographics
+
 CREATE TABLE educational_resources (
     resource_id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
@@ -79,7 +76,7 @@ CREATE TABLE educational_resources (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
--- Hospitals table to store hospital information
+
 CREATE TABLE hospitals (
     hospital_id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
@@ -92,3 +89,6 @@ CREATE TABLE hospitals (
 );
 
 ALTER TABLE users ADD COLUMN provider VARCHAR(50) DEFAULT 'email';
+
+use database prostatecare_kenya;
+select * from users;

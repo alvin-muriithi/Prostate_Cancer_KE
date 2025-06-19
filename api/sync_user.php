@@ -24,7 +24,7 @@ try {
     $insert->execute([$name, $email]);
   }
 
-  // Return success response
+  // success 
   echo json_encode(["message" => "User synced"]);
 } catch (Exception $e) {
   http_response_code(500);

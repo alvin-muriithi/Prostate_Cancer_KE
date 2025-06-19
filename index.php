@@ -155,7 +155,7 @@
             >About</a
           >
           <a
-            href="education.html"
+            href="education.php"
             class="nav-link text-gray-700 hover:text-primary transition-colors"
             >Education</a
           >
@@ -165,12 +165,12 @@
             >Hospitals</a
           >
           <a
-            href="index.html#events"
+            href="events.php"
             class="nav-link text-gray-700 hover:text-primary transition-colors"
             >Events</a
           >
           <a
-            href="index.html#contact"
+            href="index.php#contact"
             class="nav-link text-gray-700 hover:text-primary transition-colors"
             >Contact</a
           >
@@ -252,7 +252,7 @@
             class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
           >
             <a
-              href="#education"
+              href="education.php"
               class="whitespace-nowrap bg-primary text-white px-8 py-3 !rounded-button hover:bg-opacity-90 transition-all text-center"
               >Learn More</a
             >
