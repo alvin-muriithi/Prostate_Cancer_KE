@@ -67,7 +67,7 @@
       font-family: 'Merriweather', serif;
       }
       .hero-section {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.7) 60%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0) 100%), url('https://readdy.ai/api/search-image?query=Professional%20medical%20doctor%20in%20blue%20scrubs%20examining%20a%203D%20model%20of%20a%20prostate%2C%20with%20soft%20blue%20lighting%2C%20medical%20equipment%20in%20background%2C%20high-quality%20medical%20visualization%2C%20clean%20clinical%20environment%2C%20educational%20setting%2C%20detailed%20anatomical%20model%2C%20professional%20healthcare%20setting%2C%20soft%20focus%20background&width=1920&height=1080&seq=prostate1&orientation=landscape');
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.7) 60%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0) 100%), url('family.png');
       background-size: cover;
       background-position: center right;
       }
@@ -144,13 +144,13 @@
         class="container mx-auto px-6 py-3 flex justify-between items-center"
       >
         <div class="flex items-center">
-          <a href="index.html" class="text-2xl font-['Pacifico'] text-primary"
+          <a href="index.php" class="text-2xl font-['Pacifico'] text-primary"
             >ProstateCare</a
           >
         </div>
         <div class="hidden md:flex items-center space-x-8">
           <a
-            href="index.html#about"
+            href="index.php#about"
             class="nav-link text-gray-700 hover:text-primary transition-colors"
             >About</a
           >
@@ -160,7 +160,7 @@
             >Education</a
           >
           <a
-            href="hospitals.html"
+            href="hospitals.php"
             class="nav-link text-gray-700 hover:text-primary transition-colors"
             >Hospitals</a
           >
@@ -205,27 +205,27 @@
       <div id="mobile-menu" class="md:hidden bg-white hidden">
         <div class="container mx-auto px-6 py-3 flex flex-col space-y-4">
           <a
-            href="index.html#about"
+            href="index.php#about"
             class="text-gray-700 hover:text-primary transition-colors py-2"
             >About</a
           >
           <a
-            href="education.html"
+            href="education.php"
             class="text-gray-700 hover:text-primary transition-colors py-2"
             >Education</a
           >
           <a
-            href="hospitals.html"
+            href="hospitals.php"
             class="text-gray-700 hover:text-primary transition-colors py-2"
             >Hospitals</a
           >
           <a
-            href="index.html#events"
+            href="events.php"
             class="text-gray-700 hover:text-primary transition-colors py-2"
             >Events</a
           >
           <a
-            href="index.html#contact"
+            href="index.php#contact"
             class="text-gray-700 hover:text-primary transition-colors py-2"
             >Contact</a
           >
@@ -257,7 +257,7 @@
               >Learn More</a
             >
             <a
-              href="#contact"
+              href="index.php#contact"
               class="whitespace-nowrap border-2 border-primary text-primary px-8 py-3 !rounded-button hover:bg-primary hover:text-white transition-all text-center"
               >Contact Us</a
             >
@@ -336,613 +336,6 @@
         </div>
       </div>
     </section>
-    <!-- Education Section -->
-    <section class="py-16" id="education">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-16 scroll-reveal">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Prostate Cancer Education
-          </h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto serif">
-            Understanding prostate cancer is the first step toward prevention
-            and early detection. Explore our comprehensive resources below.
-          </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- What is Prostate Cancer -->
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden card-hover scroll-reveal"
-          >
-            <div class="h-48 overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=3D%20medical%20illustration%20of%20prostate%20gland%20with%20highlighted%20cancer%20cells%2C%20anatomical%20visualization%2C%20educational%20medical%20diagram%2C%20detailed%20cellular%20structure%2C%20professional%20medical%20textbook%20quality%2C%20blue%20background%2C%20high%20detail&width=600&height=400&seq=prostate2&orientation=landscape"
-                alt="Prostate Cancer Illustration"
-                class="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800 mb-3">
-                What is Prostate Cancer?
-              </h3>
-              <p class="text-gray-600 mb-4 serif">
-                Prostate cancer develops in the prostate gland, which is part of
-                the male reproductive system. It typically grows slowly and
-                initially remains confined to the prostate gland.
-              </p>
-              <button
-                class="text-primary font-medium flex items-center education-toggle"
-                data-target="what-content"
-              >
-                Learn more
-                <i class="ri-arrow-right-line ml-2"></i>
-              </button>
-              <div class="mt-4 hidden" id="what-content">
-                <p class="text-gray-600 mb-3 serif">
-                  The prostate is a walnut-sized gland located below the bladder
-                  and in front of the rectum. It produces fluid that nourishes
-                  and transports sperm.
-                </p>
-                <p class="text-gray-600 mb-3 serif">
-                  When cells in the prostate begin to grow uncontrollably,
-                  prostate cancer develops. These abnormal cells can eventually
-                  form a tumor and, in more advanced cases, spread to other
-                  parts of the body.
-                </p>
-                <p class="text-gray-600 serif">
-                  Most prostate cancers are adenocarcinomas, which develop from
-                  the gland cells that produce prostatic fluid.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Risk Factors -->
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden card-hover scroll-reveal"
-          >
-            <div class="h-48 overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=African%20man%20discussing%20with%20doctor%20about%20health%20risks%2C%20medical%20consultation%2C%20healthcare%20professional%20explaining%20medical%20chart%2C%20professional%20clinical%20setting%2C%20blue%20medical%20office%2C%20preventive%20healthcare%20discussion%2C%20patient%20education%20moment&width=600&height=400&seq=prostate3&orientation=landscape"
-                alt="Risk Factors"
-                class="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800 mb-3">Risk Factors</h3>
-              <p class="text-gray-600 mb-4 serif">
-                Several factors can increase your risk of developing prostate
-                cancer, including age, family history, and ethnicity.
-              </p>
-              <button
-                class="text-primary font-medium flex items-center education-toggle"
-                data-target="risk-content"
-              >
-                Learn more
-                <i class="ri-arrow-right-line ml-2"></i>
-              </button>
-              <div class="mt-4 hidden" id="risk-content">
-                <ul class="list-disc pl-5 text-gray-600 serif space-y-2">
-                  <li>Age: Risk increases significantly after age 50</li>
-                  <li>
-                    Family history: Having a father or brother with prostate
-                    cancer doubles your risk
-                  </li>
-                  <li>Ethnicity: African men have higher risk rates</li>
-                  <li>
-                    Diet: High consumption of red meat and high-fat dairy
-                    products
-                  </li>
-                  <li>
-                    Obesity: Associated with more aggressive forms of prostate
-                    cancer
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- Symptoms -->
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden card-hover scroll-reveal"
-          >
-            <div class="h-48 overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=Medical%20infographic%20showing%20symptoms%20of%20prostate%20problems%2C%20visual%20representation%20of%20urinary%20symptoms%2C%20medical%20diagram%20with%20human%20silhouette%2C%20educational%20healthcare%20visual%2C%20professional%20medical%20illustration%2C%20blue%20color%20scheme%2C%20clean%20design&width=600&height=400&seq=prostate4&orientation=landscape"
-                alt="Symptoms"
-                class="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800 mb-3">Symptoms</h3>
-              <p class="text-gray-600 mb-4 serif">
-                Early prostate cancer often has no symptoms. Advanced cases may
-                cause several urinary symptoms and other discomforts.
-              </p>
-              <button
-                class="text-primary font-medium flex items-center education-toggle"
-                data-target="symptoms-content"
-              >
-                Learn more
-                <i class="ri-arrow-right-line ml-2"></i>
-              </button>
-              <div class="mt-4 hidden" id="symptoms-content">
-                <ul class="list-disc pl-5 text-gray-600 serif space-y-2">
-                  <li>Frequent urination, especially at night</li>
-                  <li>Difficulty starting or stopping urination</li>
-                  <li>Weak or interrupted urine flow</li>
-                  <li>Blood in urine or semen</li>
-                  <li>Painful ejaculation</li>
-                  <li>Pain or burning during urination</li>
-                  <li>Discomfort in the pelvic area</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- Prevention -->
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden card-hover scroll-reveal"
-          >
-            <div class="h-48 overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=Healthy%20lifestyle%20choices%20for%20men%2C%20fresh%20vegetables%20and%20fruits%2C%20man%20exercising%20outdoors%2C%20Mediterranean%20diet%20plate%2C%20preventive%20healthcare%20visualization%2C%20blue%20sky%20background%2C%20healthy%20living%20concept%2C%20professional%20health%20photography&width=600&height=400&seq=prostate5&orientation=landscape"
-                alt="Prevention"
-                class="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800 mb-3">
-                Prevention Strategies
-              </h3>
-              <p class="text-gray-600 mb-4 serif">
-                While some risk factors cannot be changed, there are steps you
-                can take to reduce your risk of prostate cancer.
-              </p>
-              <button
-                class="text-primary font-medium flex items-center education-toggle"
-                data-target="prevention-content"
-              >
-                Learn more
-                <i class="ri-arrow-right-line ml-2"></i>
-              </button>
-              <div class="mt-4 hidden" id="prevention-content">
-                <ul class="list-disc pl-5 text-gray-600 serif space-y-2">
-                  <li>Maintain a healthy diet rich in fruits and vegetables</li>
-                  <li>Exercise regularly</li>
-                  <li>Maintain a healthy weight</li>
-                  <li>
-                    Regular screenings after age 45 (earlier if high risk)
-                  </li>
-                  <li>Limit consumption of red meat and high-fat dairy</li>
-                  <li>
-                    Consider including tomatoes, broccoli, and green tea in your
-                    diet
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Video & Infographic Section -->
-    <section class="py-16 bg-gray-50">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-16 scroll-reveal">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Educational Resources
-          </h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto serif">
-            Visual resources to help you better understand prostate cancer, its
-            detection, and treatment options.
-          </p>
-        </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <!-- Video Section -->
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden scroll-reveal"
-          >
-            <div class="aspect-w-16 aspect-h-9 relative">
-              <div class="w-full h-0 pb-[56.25%] relative bg-gray-200">
-                <div class="absolute inset-0 flex items-center justify-center">
-                  <div class="text-center">
-                    <div
-                      class="w-20 h-20 flex items-center justify-center mx-auto mb-4 bg-primary bg-opacity-20 rounded-full"
-                    >
-                      <i class="ri-video-line ri-2x text-primary"></i>
-                    </div>
-                    <p class="text-gray-600">Video player placeholder</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800 mb-3">
-                Understanding Prostate Cancer Screening
-              </h3>
-              <p class="text-gray-600 serif">
-                This educational video explains the importance of regular
-                prostate cancer screening, the different screening methods
-                available, and what to expect during a screening appointment.
-              </p>
-            </div>
-          </div>
-          <!-- Infographic -->
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden scroll-reveal"
-          >
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800 mb-6">
-                Prostate Cancer: Facts & Figures
-              </h3>
-              <div class="infographic-container">
-                <img
-                  src="https://readdy.ai/api/search-image?query=Medical%20infographic%20about%20prostate%20cancer%20statistics%20and%20facts%2C%20professional%20data%20visualization%2C%20educational%20healthcare%20chart%2C%20blue%20color%20scheme%2C%20clean%20modern%20design%2C%20statistical%20information%20layout%2C%20medical%20information%20design%2C%20high%20quality%20information%20design&width=800&height=600&seq=prostate6&orientation=landscape"
-                  alt="Prostate Cancer Infographic"
-                  class="w-full rounded-lg"
-                />
-              </div>
-              <div class="mt-6">
-                <p class="text-gray-600 serif">
-                  This infographic provides key statistics about prostate cancer
-                  in Kenya, including prevalence rates, survival statistics, and
-                  the impact of early detection on treatment outcomes.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Hospital Listings -->
-    <section class="py-16" id="hospitals">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-16 scroll-reveal">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Specialized Hospitals
-          </h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto serif">
-            These leading Kenyan hospitals offer comprehensive prostate cancer
-            screening, diagnosis, and treatment services.
-          </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Kenyatta National Hospital -->
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden card-hover scroll-reveal"
-          >
-            <div class="h-48 overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=Modern%20hospital%20building%20exterior%2C%20Kenyan%20healthcare%20facility%2C%20professional%20medical%20center%20architecture%2C%20blue%20sky%2C%20clean%20medical%20facility%2C%20contemporary%20hospital%20design%2C%20welcoming%20entrance&width=600&height=400&seq=hospital1&orientation=landscape"
-                alt="Kenyatta National Hospital"
-                class="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800 mb-2">
-                Kenyatta National Hospital
-              </h3>
-              <p class="text-gray-600 mb-4 serif">
-                Kenya's largest referral and teaching hospital with
-                comprehensive oncology services.
-              </p>
-              <div class="space-y-2">
-                <div class="flex items-start">
-                  <div
-                    class="w-5 h-5 flex items-center justify-center mt-1 text-primary"
-                  >
-                    <i class="ri-map-pin-line"></i>
-                  </div>
-                  <p class="ml-2 text-gray-600">
-                    Hospital Road, Upper Hill, Nairobi
-                  </p>
-                </div>
-                <div class="flex items-start">
-                  <div
-                    class="w-5 h-5 flex items-center justify-center mt-1 text-primary"
-                  >
-                    <i class="ri-phone-line"></i>
-                  </div>
-                  <p class="ml-2 text-gray-600">+254 20 2726300</p>
-                </div>
-                <div class="flex items-start">
-                  <div
-                    class="w-5 h-5 flex items-center justify-center mt-1 text-primary"
-                  >
-                    <i class="ri-global-line"></i>
-                  </div>
-                  <p class="ml-2 text-gray-600">knh.or.ke</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Aga Khan University Hospital -->
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden card-hover scroll-reveal"
-          >
-            <div class="h-48 overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=Modern%20hospital%20building%20with%20glass%20facade%2C%20premium%20healthcare%20facility%2C%20professional%20medical%20center%20architecture%2C%20blue%20sky%2C%20clean%20medical%20facility%2C%20contemporary%20hospital%20design%2C%20welcoming%20entrance&width=600&height=400&seq=hospital2&orientation=landscape"
-                alt="Aga Khan University Hospital"
-                class="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800 mb-2">
-                Aga Khan University Hospital
-              </h3>
-              <p class="text-gray-600 mb-4 serif">
-                Private teaching hospital with state-of-the-art cancer
-                diagnostic and treatment facilities.
-              </p>
-              <div class="space-y-2">
-                <div class="flex items-start">
-                  <div
-                    class="w-5 h-5 flex items-center justify-center mt-1 text-primary"
-                  >
-                    <i class="ri-map-pin-line"></i>
-                  </div>
-                  <p class="ml-2 text-gray-600">
-                    3rd Parklands Avenue, Nairobi
-                  </p>
-                </div>
-                <div class="flex items-start">
-                  <div
-                    class="w-5 h-5 flex items-center justify-center mt-1 text-primary"
-                  >
-                    <i class="ri-phone-line"></i>
-                  </div>
-                  <p class="ml-2 text-gray-600">+254 20 3662000</p>
-                </div>
-                <div class="flex items-start">
-                  <div
-                    class="w-5 h-5 flex items-center justify-center mt-1 text-primary"
-                  >
-                    <i class="ri-global-line"></i>
-                  </div>
-                  <p class="ml-2 text-gray-600">hospitals.aku.edu</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Nairobi Hospital -->
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden card-hover scroll-reveal"
-          >
-            <div class="h-48 overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=Modern%20hospital%20building%20with%20landscaped%20entrance%2C%20premium%20healthcare%20facility%2C%20professional%20medical%20center%20architecture%2C%20blue%20sky%2C%20clean%20medical%20facility%2C%20contemporary%20hospital%20design%2C%20welcoming%20entrance&width=600&height=400&seq=hospital3&orientation=landscape"
-                alt="Nairobi Hospital"
-                class="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800 mb-2">
-                Nairobi Hospital
-              </h3>
-              <p class="text-gray-600 mb-4 serif">
-                Leading private hospital with specialized urology and oncology
-                departments.
-              </p>
-              <div class="space-y-2">
-                <div class="flex items-start">
-                  <div
-                    class="w-5 h-5 flex items-center justify-center mt-1 text-primary"
-                  >
-                    <i class="ri-map-pin-line"></i>
-                  </div>
-                  <p class="ml-2 text-gray-600">
-                    Argwings Kodhek Road, Nairobi
-                  </p>
-                </div>
-                <div class="flex items-start">
-                  <div
-                    class="w-5 h-5 flex items-center justify-center mt-1 text-primary"
-                  >
-                    <i class="ri-phone-line"></i>
-                  </div>
-                  <p class="ml-2 text-gray-600">+254 20 2845000</p>
-                </div>
-                <div class="flex items-start">
-                  <div
-                    class="w-5 h-5 flex items-center justify-center mt-1 text-primary"
-                  >
-                    <i class="ri-global-line"></i>
-                  </div>
-                  <p class="ml-2 text-gray-600">nairobihospital.org</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- MP Shah Hospital -->
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden card-hover scroll-reveal"
-          >
-            <div class="h-48 overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=Modern%20hospital%20building%20with%20circular%20driveway%2C%20premium%20healthcare%20facility%2C%20professional%20medical%20center%20architecture%2C%20blue%20sky%2C%20clean%20medical%20facility%2C%20contemporary%20hospital%20design%2C%20welcoming%20entrance&width=600&height=400&seq=hospital4&orientation=landscape"
-                alt="MP Shah Hospital"
-                class="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800 mb-2">
-                MP Shah Hospital
-              </h3>
-              <p class="text-gray-600 mb-4 serif">
-                Multi-specialty hospital with advanced diagnostic imaging and
-                cancer treatment facilities.
-              </p>
-              <div class="space-y-2">
-                <div class="flex items-start">
-                  <div
-                    class="w-5 h-5 flex items-center justify-center mt-1 text-primary"
-                  >
-                    <i class="ri-map-pin-line"></i>
-                  </div>
-                  <p class="ml-2 text-gray-600">
-                    Shivachi Road, Parklands, Nairobi
-                  </p>
-                </div>
-                <div class="flex items-start">
-                  <div
-                    class="w-5 h-5 flex items-center justify-center mt-1 text-primary"
-                  >
-                    <i class="ri-phone-line"></i>
-                  </div>
-                  <p class="ml-2 text-gray-600">+254 20 3746000</p>
-                </div>
-                <div class="flex items-start">
-                  <div
-                    class="w-5 h-5 flex items-center justify-center mt-1 text-primary"
-                  >
-                    <i class="ri-global-line"></i>
-                  </div>
-                  <p class="ml-2 text-gray-600">mpshahhosp.org</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Events & Meetups -->
-    <section class="py-16 bg-gray-50" id="events">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-16 scroll-reveal">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Events & Meetups
-          </h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto serif">
-            Join our community events to learn more about prostate cancer
-            prevention, connect with healthcare professionals, and support
-            others.
-          </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Event 1 -->
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden card-hover scroll-reveal"
-          >
-            <div class="h-48 overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=Medical%20conference%20with%20doctors%20presenting%20to%20audience%2C%20healthcare%20professionals%20at%20seminar%2C%20medical%20education%20event%2C%20blue%20themed%20conference%20room%2C%20professional%20medical%20presentation%2C%20healthcare%20symposium&width=600&height=400&seq=event1&orientation=landscape"
-                alt="Free Screening Event"
-                class="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div class="p-6">
-              <div class="flex items-center mb-4">
-                <div
-                  class="w-12 h-12 flex flex-col items-center justify-center bg-primary bg-opacity-10 rounded-lg text-primary"
-                >
-                  <span class="text-sm font-bold">JUN</span>
-                  <span class="text-lg font-bold">15</span>
-                </div>
-                <div class="ml-4">
-                  <p class="text-gray-600">Thursday, 9:00 AM - 4:00 PM</p>
-                  <p class="text-gray-600">Kenyatta National Hospital</p>
-                </div>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-3">
-                Free Prostate Cancer Screening Day
-              </h3>
-              <p class="text-gray-600 mb-4 serif">
-                Join us for a free prostate cancer screening event. No
-                appointment necessary. First come, first served.
-              </p>
-              <a
-                href="#"
-                class="whitespace-nowrap bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all inline-block"
-                >Register</a
-              >
-            </div>
-          </div>
-          <!-- Event 2 -->
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden card-hover scroll-reveal"
-          >
-            <div class="h-48 overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=Support%20group%20meeting%20with%20diverse%20men%20sitting%20in%20circle%2C%20community%20health%20discussion%2C%20emotional%20support%20session%2C%20blue%20toned%20room%2C%20caring%20environment%2C%20mens%20health%20support%20group%2C%20professional%20counseling%20setting&width=600&height=400&seq=event2&orientation=landscape"
-                alt="Support Group Meeting"
-                class="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div class="p-6">
-              <div class="flex items-center mb-4">
-                <div
-                  class="w-12 h-12 flex flex-col items-center justify-center bg-primary bg-opacity-10 rounded-lg text-primary"
-                >
-                  <span class="text-sm font-bold">JUN</span>
-                  <span class="text-lg font-bold">22</span>
-                </div>
-                <div class="ml-4">
-                  <p class="text-gray-600">Thursday, 6:00 PM - 8:00 PM</p>
-                  <p class="text-gray-600">
-                    Nairobi Hospital - Conference Room B
-                  </p>
-                </div>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-3">
-                Prostate Cancer Support Group
-              </h3>
-              <p class="text-gray-600 mb-4 serif">
-                Monthly support group for prostate cancer patients, survivors,
-                and their families. Share experiences and find support.
-              </p>
-              <a
-                href="#"
-                class="whitespace-nowrap bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all inline-block"
-                >Register</a
-              >
-            </div>
-          </div>
-          <!-- Event 3 -->
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden card-hover scroll-reveal"
-          >
-            <div class="h-48 overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=Educational%20workshop%20with%20doctor%20presenting%20to%20community%20members%2C%20health%20education%20session%2C%20medical%20professional%20explaining%20to%20audience%2C%20blue%20themed%20presentation%20room%2C%20healthcare%20learning%20environment%2C%20community%20health%20education&width=600&height=400&seq=event3&orientation=landscape"
-                alt="Educational Workshop"
-                class="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div class="p-6">
-              <div class="flex items-center mb-4">
-                <div
-                  class="w-12 h-12 flex flex-col items-center justify-center bg-primary bg-opacity-10 rounded-lg text-primary"
-                >
-                  <span class="text-sm font-bold">JUL</span>
-                  <span class="text-lg font-bold">08</span>
-                </div>
-                <div class="ml-4">
-                  <p class="text-gray-600">Saturday, 10:00 AM - 1:00 PM</p>
-                  <p class="text-gray-600">Aga Khan University Hospital</p>
-                </div>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-3">
-                Prostate Health Educational Workshop
-              </h3>
-              <p class="text-gray-600 mb-4 serif">
-                Learn about prostate health, cancer prevention, and treatment
-                options from leading urologists and oncologists.
-              </p>
-              <a
-                href="#"
-                class="whitespace-nowrap bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all inline-block"
-                >Register</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="text-center mt-12">
-          <a
-            href="#"
-            class="whitespace-nowrap border-2 border-primary text-primary px-8 py-3 !rounded-button hover:bg-primary hover:text-white transition-all inline-block"
-            >View All Events</a
-          >
-        </div>
-      </div>
-    </section>
     <!-- Donation Section -->
     <section class="py-16 bg-white" id="donate">
       <div class="container mx-auto px-6">
@@ -990,15 +383,6 @@
                   </p>
                 </li>
               </ul>
-            </div>
-            <div class="flex items-center space-x-4">
-              <img
-                src="https://readdy.ai/api/search-image?query=M-Pesa%20logo%2C%20simple%20clean%20professional%20logo%20on%20white%20background%2C%20payment%20system%20logo%2C%20mobile%20money%20service%2C%20financial%20technology%20icon%2C%20professional%20brand%20identity&width=120&height=60&seq=mpesa&orientation=landscape"
-                alt="M-Pesa"
-                class="h-10 object-contain"
-              />
-              <p class="text-gray-600">M-Pesa integration will be added soon</p>
-            </div>
           </div>
           <div class="bg-gray-50 p-8 rounded-lg shadow-md scroll-reveal">
             <h3 class="text-2xl font-bold text-gray-800 mb-6">
@@ -1069,13 +453,17 @@
               </div>
               <div class="mb-6">
                 <label class="block text-gray-700 mb-2" for="phone"
-                  >Phone Number</label
-                >
+                  >Phone Number</label>
+                 <div class="flex items-center bg-white rounded-button overflow-hidden">
+                <span class="pl-4 pr-2 text-gray-600">+254</span>
                 <input
                   type="text"
                   id="phone"
                   class="w-full px-4 py-3 border-none !rounded-button bg-white"
                   placeholder="Enter your phone number"
+                  maxlength="9"
+                  pattern="\d{9}"
+                  required
                 />
               </div>
               <div class="mb-6">
@@ -1087,6 +475,7 @@
                 </label>
               </div>
               <button
+                id="donate-btn"
                 type="submit"
                 class="whitespace-nowrap w-full bg-primary text-white px-6 py-3 !rounded-button hover:bg-opacity-90 transition-all"
               >
@@ -1114,60 +503,60 @@
             <h3 class="text-2xl font-bold text-gray-800 mb-6">
               Send a Message
             </h3>
-            <form>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <div>
-                  <label class="block text-gray-700 mb-2" for="contact-name"
-                    >Full Name</label
-                  >
+            <form action="send_message.php" method="POST">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <label class="block text-gray-700 mb-2" for="contact-name">Full Name</label>
+                    <input
+                      type="text"
+                      id="contact-name"
+                      name="contact-name"
+                      class="w-full px-4 py-3 border-none !rounded-button bg-gray-50"
+                      placeholder="Enter your full name"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-gray-700 mb-2" for="contact-email">Email Address</label>
+                    <input
+                      type="email"
+                      id="contact-email"
+                      name="contact-email"
+                      class="w-full px-4 py-3 border-none !rounded-button bg-gray-50"
+                      placeholder="Enter your email address"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="mb-6">
+                  <label class="block text-gray-700 mb-2" for="contact-subject">Subject</label>
                   <input
                     type="text"
-                    id="contact-name"
+                    id="contact-subject"
+                    name="contact-subject"
                     class="w-full px-4 py-3 border-none !rounded-button bg-gray-50"
-                    placeholder="Enter your full name"
+                    placeholder="Enter message subject"
+                    required
                   />
                 </div>
-                <div>
-                  <label class="block text-gray-700 mb-2" for="contact-email"
-                    >Email Address</label
-                  >
-                  <input
-                    type="email"
-                    id="contact-email"
+                <div class="mb-6">
+                  <label class="block text-gray-700 mb-2" for="contact-message">Message</label>
+                  <textarea
+                    id="contact-message"
+                    name="contact-message"
+                    rows="5"
                     class="w-full px-4 py-3 border-none !rounded-button bg-gray-50"
-                    placeholder="Enter your email address"
-                  />
+                    placeholder="Enter your message"
+                    required
+                  ></textarea>
                 </div>
-              </div>
-              <div class="mb-6">
-                <label class="block text-gray-700 mb-2" for="contact-subject"
-                  >Subject</label
+                <button
+                  type="submit"
+                  class="whitespace-nowrap bg-primary text-white px-8 py-3 !rounded-button hover:bg-opacity-90 transition-all"
                 >
-                <input
-                  type="text"
-                  id="contact-subject"
-                  class="w-full px-4 py-3 border-none !rounded-button bg-gray-50"
-                  placeholder="Enter message subject"
-                />
-              </div>
-              <div class="mb-6">
-                <label class="block text-gray-700 mb-2" for="contact-message"
-                  >Message</label
-                >
-                <textarea
-                  id="contact-message"
-                  rows="5"
-                  class="w-full px-4 py-3 border-none !rounded-button bg-gray-50"
-                  placeholder="Enter your message"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="whitespace-nowrap bg-primary text-white px-8 py-3 !rounded-button hover:bg-opacity-90 transition-all"
-              >
-                Send Message
-              </button>
-            </form>
+                  Send Message
+                </button>
+              </form>
           </div>
           <div class="scroll-reveal">
             <div class="bg-white rounded-lg shadow-md p-8 mb-8">
@@ -1290,11 +679,13 @@
             Subscribe to our newsletter to receive updates on prostate cancer
             research, upcoming events, and health tips.
           </p>
-          <form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
-            <input
-              type="email"
-              class="flex-1 px-4 py-3 border-none !rounded-button bg-white"
-              placeholder="Enter your email address"
+          <form id="newsletterForm" class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+              <input
+                type="email"
+                name="subscriber_email"
+                required
+                placeholder="Enter your email address"
+                class="flex-1 px-4 py-3 border-none !rounded-button bg-white"
             />
             <button
               type="submit"
@@ -1303,6 +694,15 @@
               Subscribe
             </button>
           </form>
+          <!-- Confirmation Popup -->
+              <div
+                id="toastSuccess"
+                class="hidden mt-4 bg-green-100 border border-green-300 text-green-700 px-4 py-3 rounded-md transition"
+              >
+                🎉 You're successfully subscribed to the newsletter!
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </section>
@@ -1904,6 +1304,8 @@
         // Donation amount buttons
         const amountButtons = document.querySelectorAll(".amount-btn");
         const amountInput = document.getElementById("amount");
+        
+
         amountButtons.forEach((button) => {
           button.addEventListener("click", function () {
             // Remove active class from all buttons
@@ -1918,6 +1320,73 @@
             amountInput.value = this.getAttribute("data-amount");
           });
         });
+      });
+              let selectedAmount = '';
+
+              // Handle preset amount buttons
+              document.querySelectorAll('.amount-btn').forEach(button => {
+                button.addEventListener('click', () => {
+                  selectedAmount = button.getAttribute('data-amount');
+                  document.getElementById('amount').value = selectedAmount;
+                });
+              });
+
+              // Form submit logic
+              document.getElementById('donate-btn').addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const amount = document.getElementById('amount').value.trim();
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const phone = document.getElementById('phone').value.trim();
+
+                if (!amount || !phone) {
+                  alert('Please fill in the amount and phone number.');
+                  return;
+                }
+
+                fetch('stk_push.php', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                  body: `amount=${encodeURIComponent(amount)}&phone=${encodeURIComponent(phone)}&name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}`
+                })
+                .then(res => res.json())
+                .then(data => {
+                  alert("Payment prompt sent to your phone.");
+                  console.log(data);
+                })
+                .catch(err => {
+                  alert("Failed to initiate payment.");
+                  console.error(err);
+                });
+              });
+
+      // Confirmation Popup
+      const form = document.getElementById("newsletterForm");
+      const toast = document.getElementById("toastSuccess");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+
+        fetch("newsletter.php", {
+          method: "POST",
+          body: formData
+        })
+          .then((response) => response.text())
+          .then((data) => {
+            if (data === "success") {
+              toast.classList.remove("hidden");
+              form.reset();
+            } else {
+              alert("Something went wrong. Please try again.");
+            }
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+            alert("Failed to submit.");
+          });
       });
     </script>
   </body>
