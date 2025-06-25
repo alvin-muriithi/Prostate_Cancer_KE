@@ -18,6 +18,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
@@ -444,6 +448,94 @@
         </div>
       </div>
     </section>
+
+
+    <!-- Treatments Section -->
+    <section class="bg-gray-50 py-16 px-6" id="treatments">
+  <div class="max-w-7xl mx-auto text-center mb-10">
+    <h2 class="text-4xl font-bold text-teal-700">💉 Prostate Cancer Treatments</h2>
+    <p class="text-gray-600 mt-2 text-lg max-w-2xl mx-auto">
+      Explore the most common and effective treatment options available for prostate cancer in Kenya.
+    </p>
+  </div>
+
+  <div class="swiper mySwiper max-w-6xl mx-auto px-4">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide bg-white shadow-md rounded-xl p-6">
+        <h3 class="text-xl font-semibold text-teal-600 mb-2">🎯 Hormone Therapy</h3>
+        <p class="text-gray-700">
+          Reduces testosterone levels to slow cancer growth. Available via medication or surgery (orchiectomy).
+        </p>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide bg-white shadow-md rounded-xl p-6">
+        <h3 class="text-xl font-semibold text-teal-600 mb-2">🔬 Radiation Therapy</h3>
+        <p class="text-gray-700">
+          Uses high-energy rays to kill cancer cells. External beam radiation is available in public and private hospitals.
+        </p>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide bg-white shadow-md rounded-xl p-6">
+        <h3 class="text-xl font-semibold text-teal-600 mb-2">🧪 Chemotherapy</h3>
+        <p class="text-gray-700">
+          Drug-based treatment for advanced or hormone-resistant prostate cancer. Common drugs include docetaxel.
+        </p>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="swiper-slide bg-white shadow-md rounded-xl p-6">
+        <h3 class="text-xl font-semibold text-teal-600 mb-2">🩺 Surgery (Prostatectomy)</h3>
+        <p class="text-gray-700">
+          Surgical removal of the prostate. Done as open surgery or minimally invasive laparoscopic procedures.
+        </p>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="swiper-slide bg-white shadow-md rounded-xl p-6">
+        <h3 class="text-xl font-semibold text-teal-600 mb-2">🔍 Active Surveillance</h3>
+        <p class="text-gray-700">
+          Monitors slow-growing cancer in early stages with regular checkups. Avoids immediate side effects of treatment.
+        </p>
+      </div>
+    </div>
+
+    <!-- Navigation buttons -->
+    <div class="flex justify-center mt-6 gap-6">
+      <div class="swiper-button-prev !text-teal-700"></div>
+      <div class="swiper-button-next !text-teal-700"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 2
+      },
+      1024: {
+        slidesPerView: 3
+      }
+    }
+  });
+</script>
+
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-12">
       <div class="container mx-auto px-6">
