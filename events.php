@@ -363,15 +363,60 @@
             </div>
           </div>
         </div>
-        <div class="text-center mt-12">
-          <a
-            href="#"
-            class="whitespace-nowrap border-2 border-primary text-primary px-8 py-3 !rounded-button hover:bg-primary hover:text-white transition-all inline-block"
-            >View All Events</a
-          >
-        </div>
       </div>
     </section>
+
+    <!-- Support Section -->
+    <section id="support" class="bg-white py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-teal-700">🤝 Join a Support Group</h2>
+            <p class="text-gray-600 mt-4 max-w-2xl mx-auto text-lg">
+              You're not alone. Connect with other men who understand your journey. Get emotional, spiritual, and medical support.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Group Meetings -->
+            <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+              <h3 class="text-xl font-semibold text-teal-600 mb-2">📅 Monthly Group Meetings</h3>
+              <p class="text-gray-700 mb-4">
+                Join our support group sessions held on the first Saturday of every month at Kenyatta National Hospital and via Zoom.
+              </p>
+              <a href="#" class="text-sm text-teal-600 font-semibold hover:underline">See Upcoming Events</a>
+            </div>
+
+            <!-- Join Online Group -->
+            <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+              <h3 class="text-xl font-semibold text-teal-600 mb-2">📱 Join Online Community</h3>
+              <p class="text-gray-700 mb-4">
+                Prefer virtual connection? Join our WhatsApp and Telegram support groups to ask questions and receive encouragement anytime.
+              </p>
+              <a href="https://chat.whatsapp.com/yourgroup" target="_blank" class="text-sm text-teal-600 font-semibold hover:underline">Join WhatsApp Group</a>
+              <br />
+              <a href="https://t.me/yourtelegram" target="_blank" class="text-sm text-teal-600 font-semibold hover:underline">Join Telegram Group</a>
+            </div>
+
+            <!-- Member Testimonial -->
+            <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+              <h3 class="text-xl font-semibold text-teal-600 mb-2">💬 Member Spotlight</h3>
+              <p class="text-gray-700 italic">"Before joining, I felt alone. Now, I have brothers who walk with me, pray with me, and give me hope."</p>
+              <p class="mt-4 text-sm text-gray-500">– Peter M., Survivor & Support Group Leader</p>
+            </div>
+          </div>
+
+          <!-- Call to Action -->
+          <div class="text-center mt-16">
+            <a
+              href="#contact"
+              class="bg-teal-600 text-white px-8 py-3 rounded-full shadow hover:bg-teal-700 transition"
+            >
+              💌 Get in Touch to Join a Group
+            </a>
+          </div>
+        </div>
+      </section>
+
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-12">
       <div class="container mx-auto px-6">
