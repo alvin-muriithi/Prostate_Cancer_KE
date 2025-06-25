@@ -18,6 +18,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
@@ -336,6 +338,59 @@
         </div>
       </div>
     </section>
+
+    <!-- Survivor Stories Section -->
+    <section id="survivors" class="bg-gray-50 py-20 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-teal-700">💚 Survivor Stories</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto mt-2">
+            Real men. Real journeys. Inspiring stories of strength, faith, and healing.
+          </p>
+        </div>
+
+        <div class="space-y-16">
+          <!-- Story 1 -->
+          <div class="flex flex-col md:flex-row items-center gap-10" data-aos="fade-up">
+            <img src="https://i.pravatar.cc/300?img=11" alt="Peter" class="w-64 h-64 rounded-xl object-cover shadow-lg">
+            <div>
+              <h3 class="text-2xl font-semibold text-teal-600 mb-2">Peter M., 59 – Nairobi</h3>
+              <p class="text-gray-700 leading-relaxed">
+                “When I was diagnosed, I felt like my life had ended. But joining a support group gave me courage. I’ve learned to take life one day at a time and now advocate for early testing in my church.”
+              </p>
+            </div>
+          </div>
+
+          <!-- Story 2 (reversed) -->
+          <div class="flex flex-col-reverse md:flex-row items-center gap-10" data-aos="fade-up" data-aos-delay="100">
+            <div>
+              <h3 class="text-2xl font-semibold text-teal-600 mb-2">Joseph N., 67 – Kisumu</h3>
+              <p class="text-gray-700 leading-relaxed">
+                “Radiation therapy scared me. But thanks to doctors at KNH and my family, I’m now cancer-free. Talking about it helped me heal emotionally too. I encourage young men to get screened early.”
+              </p>
+            </div>
+            <img src="https://i.pravatar.cc/300?img=17" alt="Joseph" class="w-64 h-64 rounded-xl object-cover shadow-lg">
+          </div>
+
+          <!-- Story 3 -->
+          <div class="flex flex-col md:flex-row items-center gap-10" data-aos="fade-up" data-aos-delay="200">
+            <img src="https://i.pravatar.cc/300?img=27" alt="Samuel" class="w-64 h-64 rounded-xl object-cover shadow-lg">
+            <div>
+              <h3 class="text-2xl font-semibold text-teal-600 mb-2">Samuel O., 63 – Eldoret</h3>
+              <p class="text-gray-700 leading-relaxed">
+                “I ignored symptoms for months. It almost cost me my life. Now I speak to men in my village about why it’s okay to talk about your health — and get help early.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true
+      });
+    </script>
     <!-- Donation Section -->
     <section class="py-16 bg-white" id="donate">
       <div class="container mx-auto px-6">
@@ -383,6 +438,15 @@
                   </p>
                 </li>
               </ul>
+            </div>
+            <div class="flex items-center space-x-4">
+              <img
+                src="https://readdy.ai/api/search-image?query=M-Pesa%20logo%2C%20simple%20clean%20professional%20logo%20on%20white%20background%2C%20payment%20system%20logo%2C%20mobile%20money%20service%2C%20financial%20technology%20icon%2C%20professional%20brand%20identity&width=120&height=60&seq=mpesa&orientation=landscape"
+                alt="M-Pesa"
+                class="h-10 object-contain"
+              />
+              <p class="text-gray-600">M-Pesa donation method below</p>
+            </div>
           </div>
           <div class="bg-gray-50 p-8 rounded-lg shadow-md scroll-reveal">
             <h3 class="text-2xl font-bold text-gray-800 mb-6">
@@ -390,7 +454,8 @@
             </h3>
             <form>
               <div class="mb-6">
-                <label class="block text-gray-700 mb-2" for="amount"
+                <label class="block text-gray-700 mb-2"
+              for="amount"
                   >Donation Amount (KSh)</label
                 >
                 <div class="grid grid-cols-3 gap-4 mb-4">
@@ -788,14 +853,14 @@
             <ul class="space-y-2">
               <li>
                 <a
-                  href="#"
+                  href="education.php#articles"
                   class="text-gray-300 hover:text-primary transition-colors"
                   >Research Articles</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="hospitals.php"
                   class="text-gray-300 hover:text-primary transition-colors"
                   >Treatment Options</a
                 >
