@@ -1,0 +1,95 @@
+
+  :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+      font-family: 'Montserrat', sans-serif;
+      scroll-behavior: smooth;
+      }
+      .serif {
+      font-family: 'Merriweather', serif;
+      }
+      .hero-section {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.7) 60%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0) 100%), url('family.png');
+      background-size: cover;
+      background-position: center right;
+      }
+      .card-hover {
+      transition: all 0.3s ease;
+      }
+      .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      .nav-link {
+      position: relative;
+      }
+      .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: #40E0D0;
+      transition: width 0.3s ease;
+      }
+      .nav-link:hover::after {
+      width: 100%;
+      }
+      .custom-checkbox {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #40E0D0;
+      border-radius: 4px;
+      outline: none;
+      transition: all 0.2s ease;
+      position: relative;
+      }
+      .custom-checkbox:checked {
+      background-color: #40E0D0;
+      }
+      .custom-checkbox:checked::after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 6px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      }
+      .scroll-reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+      .scroll-reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+      }
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+      }
+  
+
+
+.swiper-button-prev,
+  .swiper-button-next {
+    color: #0d9488; /* Tailwind's teal-700 */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  .swiper-button-prev {
+    left: -1.5rem; /* adjust based on spacing you want */
+  }
+
+  .swiper-button-next {
+    right: -1.5rem;
+  }
