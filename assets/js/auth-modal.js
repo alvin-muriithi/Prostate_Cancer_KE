@@ -6,12 +6,12 @@ import {
   signOut,
   onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
-import { auth } from "assets\js\firebase-config.js";
+import { auth } from "./firebase-config.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   // Forms and modal
   const authModal = document.getElementById("authModal");
-  const loginForm = document.getElementById("signin-form");
+  const loginForm = document.getElementById("loginForm");
   const signupForm = document.getElementById("signupForm");
   
 
@@ -29,11 +29,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const signupBtn = document.getElementById("signupBtn");
   const logoutBtn = document.getElementById("logoutBtn");
 
-  function showModal(form) {
+  function showModal(formToShow) {
     authModal.classList.remove("hidden");
     loginForm.classList.add("hidden");
     signupForm.classList.add("hidden");
-    form.classList.remove("hidden");
+    formToShow.classList.remove("hidden");
   }
 
   function hideModal() {
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   adminLoginBtn?.addEventListener("click", () => {
-    window.location.href = "admin_dashboard.html";
+    window.location.href = "admin/admin_login.php";
   });
 
   // GOOGLE SIGN-IN

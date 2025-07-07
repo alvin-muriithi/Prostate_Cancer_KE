@@ -17,3 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+const user = JSON.parse(localStorage.getItem("user"));
+if (user && user.role === "user") {
+  document.getElementById("userArea").innerText = `Welcome, ${user.full_name}`;
+}
+else if (user && user.role === "admin") {
+  document.getElementById("userArea").innerText = "Welcome Admin";
+} else {
+  document.getElementById("userArea").innerText = "";
+}

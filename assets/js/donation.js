@@ -3,8 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const amountInput = document.getElementById("amount");
   const donateBtn = document.getElementById("donate-btn");
 
-  let selectedAmount = '';
+  let selectedAmount = "";
 
+  // Handle quick select amount buttons
   amountButtons.forEach(button => {
     button.addEventListener("click", () => {
       amountButtons.forEach(btn => {
@@ -20,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // Donation submit
   donateBtn?.addEventListener("click", function (e) {
     e.preventDefault();
 
@@ -28,24 +30,45 @@ document.addEventListener("DOMContentLoaded", function () {
     const email = document.getElementById("email").value.trim();
     const phone = document.getElementById("phone").value.trim();
 
-    if (!amount || !phone) {
-      alert("Please fill in the amount and phone number.");
+    // Validate amount
+    if (!amount || isNaN(amount) || parseInt(amount) < 1) {
+      alert("Please enter a valid donation amount.");
       return;
     }
 
-    fetch("stk_push.php", {
+    // Validate phone (must be 9 digits, numbers only)
+    const phonePattern = /^\d{9}$/;
+    if (!phonePattern.test(phone)) {
+      alert("Phone number must be 9 digits (without +254).");
+      return;
+    }
+
+    // Optional: validate name/email if needed
+
+    // Disable button to prevent double clicks
+    donateBtn.disabled = true;
+    donateBtn.innerText = "Processing...";
+
+    fetch("assets/php/stkpush.php", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: `amount=${encodeURIComponent(amount)}&phone=${encodeURIComponent(phone)}&name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}`
     })
-      .then(res => res.json())
+      .then(res => {
+        if (!res.ok) throw new Error("Network response not ok");
+        return res.json();
+      })
       .then(data => {
         alert("Payment prompt sent to your phone.");
         console.log(data);
       })
       .catch(err => {
-        alert("Failed to initiate payment.");
+        alert("Failed to initiate payment. Please try again.");
         console.error(err);
+      })
+      .finally(() => {
+        donateBtn.disabled = false;
+        donateBtn.innerText = "Donate Now";
       });
   });
 });
