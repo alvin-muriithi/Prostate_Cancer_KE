@@ -6,8 +6,8 @@ $phone = $_POST['phone'];
 $name = $_POST['name'];
 $email = $_POST['email'];
 
-$consumerKey = 'Adfv00z31jtU55XzbTLU2jgoHa9DxkDbHhwbJmPvVjfYDqnY';
-$consumerSecret = 'Vb12nAJk9u4TSAjV2F0IZs7AWXQ3iYpoW6awmEDCCX8NnljeDJvVB0ZxvSgad5J2';
+$consumerKey = 'OQxJdQErwTydtneow3bdrTDlN26AsKwYuhTD0eD4FgnbuPFq';
+$consumerSecret = 'vGLSrVQnMs98ATX0oWhaiD1pZhTZXsRbsNO0rVv77dF38Q1CMKyF5uL2AxpFENEr';
 $BusinessShortCode = '174379';
 $Passkey = 'YOUR_PASSKEY';
 $CallBackURL = 'https://yourdomain.com/callback.php';
