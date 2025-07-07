@@ -10,11 +10,11 @@ $BusinessShortCode = '174379';
 $Timestamp = date('YmdHis');
 // ENCRIPT  DATA TO GET PASSWORD
 $Password = base64_encode($BusinessShortCode . $passkey . $Timestamp);
-$phone = '254715089915';//phone number to receive the stk push
-$money = '1';
+$phone = '254' . $_POST['phone'];//phone number to receive the stk push
+$money = $_POST['amount'];//amount to be sent'';
 $PartyA = $phone;
 $PartyB = '';
-$AccountReference = 'Alvo';
+$AccountReference = 'Prostate Cancer KE';
 $TransactionDesc = 'stkpush test';
 $Amount = $money;
 $stkpushheader = ['Content-Type:application/json', 'Authorization:Bearer ' . $access_token];
