@@ -194,16 +194,16 @@
     <script src= "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
-<script type="module" src="assets\js\auth-modal.js"></script>
-<script type="module" src="assets\js\firebase-config.js"></script>
-<script src="assets\js\navigation.js"></script>
-<script src="assets\js\scroll-effects.js"></script>
-<script src="assets\js\donation.js"></script>
-<script src="assets\js\newsletter.js"></script>
-<script src="assets\js\counters-and-faq.js"></script>
-<script src="assets\js\education.js"></script>
-<script src="assets\js\hospitals.js"></script>
-<script src="assets\js\swiper.js"></script>
+<script type="module" src="assets/js/auth-modal.js"></script>
+<script type="module" src="assets/js/firebase-config.js"></script>
+<script src="assets/js/navigation.js"></script>
+<script src="assets/js/scroll-effects.js"></script>
+<script src="assets/js/donation.js"></script>
+<script src="assets/js/newsletter.js"></script>
+<script src="assets/js/counters-and-faq.js"></script>
+<script src="assets/js/education.js"></script>
+<script src="assets/js/hospitals.js"></script>
+<script src="assets/js/swiper.js"></script>
 
 
 </html>

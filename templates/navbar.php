@@ -93,6 +93,7 @@
           >
             Sign Up
           </button>
+          
 
           <!-- NEW: Logout Button -->
           <button
@@ -101,6 +102,7 @@
           >
             Logout
           </button>
+
 
           <!-- NEW: User Welcome Text -->
           <span
@@ -156,4 +158,134 @@
         </div>
       </div>
     </nav>
+
+
+    <!-- Auth Modals -->
+    <div
+      id="authModal"
+      class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+      <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+        <!-- Login Form -->
+        <div id="loginForm" class="hidden">
+          <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold text-gray-800">Login</h2>
+            <button class="close-modal text-gray-500 hover:text-gray-700">
+              <i class="ri-close-line ri-lg"></i>
+            </button>
+          </div>
+          <form id="loginFormElement" class="space-y-4">
+            <div>
+              <label class="block text-gray-700 mb-2" for="loginEmail"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                id="loginEmail"
+                class="w-full px-4 py-3 border-none !rounded-button bg-gray-50"
+                required
+              />
+            </div>
+            <div>
+              <label class="block text-gray-700 mb-2" for="loginPassword"
+                >Password</label
+              >
+              <input
+                type="password"
+                id="loginPassword"
+                class="w-full px-4 py-3 border-none !rounded-button bg-gray-50"
+                required
+              />
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-primary text-white px-6 py-3 !rounded-button hover:bg-opacity-90 transition-all"
+            >
+              Login
+            </button>
+            <p class="text-center text-gray-600">
+              Don't have an account?
+              <button
+                type="button"
+                class="text-primary hover:underline"
+                id="switchToSignup"
+              >
+                Sign up
+              </button>
+            </p>
+          </form>
+        </div>
+        <!-- Signup Form -->
+        <div id="signupForm" class="hidden">
+          <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold text-gray-800">Create Account</h2>
+            <button class="close-modal text-gray-500 hover:text-gray-700">
+              <i class="ri-close-line ri-lg"></i>
+            </button>
+          </div>
+          <form id="signupFormElement" class="space-y-4">
+            <div>
+              <label class="block text-gray-700 mb-2" for="signupName"
+                >Full Name</label
+              >
+              <input
+                type="text"
+                id="signupName"
+                class="w-full px-4 py-3 border-none !rounded-button bg-gray-50"
+                required
+              />
+            </div>
+            <div>
+              <label class="block text-gray-700 mb-2" for="signupEmail"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                id="signupEmail"
+                class="w-full px-4 py-3 border-none !rounded-button bg-gray-50"
+                required
+              />
+            </div>
+            <div>
+              <label class="block text-gray-700 mb-2" for="signupPassword"
+                >Password</label
+              >
+              <input
+                type="password"
+                id="signupPassword"
+                class="w-full px-4 py-3 border-none !rounded-button bg-gray-50"
+                required
+              />
+            </div>
+            <button id="adminLoginBtn" class="whitespace-nowrap bg-gray-100 text-gray-700 px-4 py-2 !rounded-button hover:bg-gray-200 transition-all">
+              Admin? 
+            </button>
+
+            <button
+              type="submit"
+              class="w-full bg-primary text-white px-6 py-3 !rounded-button hover:bg-opacity-90 transition-all"
+            >
+              Sign Up
+            </button>
+            <button id="googleSignInBtn" class="w-full flex items-center justify-center gap-2 bg-white text-gray-700 border border-gray-300 px-4 py-2 rounded hover:bg-gray-100 transition-all">
+              <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google Logo" class="w-5 h-5" />
+              Continue with Google
+            </button>
+
+            <p class="text-center text-gray-600">
+              Already have an account?
+              <button
+                type="button"
+                class="text-primary hover:underline"
+                id="switchToLogin"
+              >
+                Login
+              </button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
     
+    
+    <script type="module" src="assets/js/firebase-config.js"></script>
+  <script type="module" src="sassets/js/auth-modal.js"></script>
