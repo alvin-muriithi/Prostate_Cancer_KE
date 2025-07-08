@@ -102,3 +102,48 @@ CREATE TABLE admins (
   password VARCHAR(255) NOT NULL,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+
+ALTER TABLE events ADD image_filename VARCHAR(255);
+
+-- Create the survivor_stories table
+CREATE TABLE survivor_stories (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  age INT NOT NULL,
+  location VARCHAR(255) NOT NULL,
+  story TEXT NOT NULL,
+  image_filename VARCHAR(255),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+select * from survivor_stories;
+
+-- Create the research_articles table
+CREATE TABLE research_articles (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  researcher VARCHAR(255) NOT NULL,
+  institution VARCHAR(255) NOT NULL,
+  summary TEXT NOT NULL,
+  content TEXT NOT NULL,
+  pdf_filename VARCHAR(255) NOT NULL,
+  image_filename VARCHAR(255),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS research_articles (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    researcher VARCHAR(255),
+    institution VARCHAR(255),
+    summary TEXT,
+    content TEXT,
+    image_filename VARCHAR(255),
+    pdf_filename VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+ALTER TABLE research_articles 
+ADD COLUMN updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
