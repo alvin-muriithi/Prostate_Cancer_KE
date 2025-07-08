@@ -103,13 +103,7 @@
             Logout
           </button>
 
-
-          <!-- NEW: User Welcome Text -->
-          <span
-            id="userWelcome"
-            class="hidden text-gray-700 font-medium whitespace-nowrap"
-          ></span>
-
+          <span id="welcomeText" class="ml-4 font-medium text-teal-700 hidden"></span>
 
 
           <a
