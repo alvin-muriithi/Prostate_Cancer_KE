@@ -1,5 +1,9 @@
 <?php include 'templates\header.php'; ?>
 <?php include 'templates\navbar.php'; ?>
+<?php
+include 'C:\xampp\htdocs\Prostate_Cancer_KE\dbconfig.php';
+$articles = $pdo->query("SELECT * FROM research_articles ORDER BY created_at DESC")->fetchAll(PDO::FETCH_ASSOC);
+?>
 
 
  <!-- Education Section -->
@@ -272,6 +276,59 @@
     </div>
   </div>
 </section>
+<script>
+// Initialize AOS (Animate On Scroll) library for animations
+AOS.init({ duration: 800, once: true });
+
+const articles = <?= json_encode($articles); ?>;
+
+const container = document.getElementById("researchArticles");
+
+articles.forEach((article, index) => {
+  const card = document.createElement("div");
+  card.className = "bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-md hover:shadow-xl transition relative";
+  card.setAttribute("data-aos", "fade-up");
+  card.setAttribute("data-aos-delay", index * 100);
+
+  const image = article.image_filename
+    ? `uploads/research_images/${article.image_filename}`
+    : "https://i.pravatar.cc/100?u=" + encodeURIComponent(article.researcher);
+
+  const pdf = `uploads/research_pdfs/${article.pdf_filename}`;
+
+  card.innerHTML = `
+    <div class="flex items-start gap-4">
+      <img src="${image}" alt="${article.researcher}" class="w-16 h-16 rounded-full object-cover border border-gray-300" />
+      <div>
+        <h3 class="text-xl font-semibold text-teal-700">${article.title}</h3>
+        <p class="text-sm text-gray-500">${article.researcher} — ${article.institution}</p>
+      </div>
+    </div>
+    <p class="mt-4 text-gray-700">${article.summary}</p>
+    <div class="hidden mt-4 text-gray-600 article-details">${article.content}</div>
+
+    <div class="flex items-center justify-between mt-4">
+      <button class="text-sm text-teal-600 font-semibold hover:underline toggle-btn">Read Full Summary</button>
+      <a href="${pdf}" download class="text-sm bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700 transition">
+        📄 Download PDF
+      </a>
+    </div>
+  `;
+
+  container.appendChild(card);
+});
+
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("toggle-btn")) {
+    const details = e.target.closest("div").querySelector(".article-details");
+    details.classList.toggle("hidden");
+    e.target.textContent = details.classList.contains("hidden")
+      ? "Read Full Summary"
+      : "Show Less";
+  }
+});
+</script>
+
 
 <!-- AOS animation library -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
