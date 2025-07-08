@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
 try {
-        $stmt = $conn->prepare("SELECT * FROM admins WHERE email = :email");
+        $stmt = $pdo->prepare("SELECT * FROM admins WHERE email = :email");
         $stmt->bindParam(":email", $email);
         $stmt->execute();
         $admin = $stmt->fetch(PDO::FETCH_ASSOC);
