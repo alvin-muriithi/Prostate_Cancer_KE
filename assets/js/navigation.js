@@ -17,12 +17,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-const user = JSON.parse(localStorage.getItem("user"));
-if (user && user.role === "user") {
-  document.getElementById("userArea").innerText = `Welcome, ${user.full_name}`;
+const welcome = document.getElementById("welcomeText");
+welcome.textContent = `Welcome, ${data?.name.split(" ")[0]}!`;
+welcome.classList.remove("hidden");
+// Ensure the welcome text is visible only when user data is available
+if (data?.name) {
+  welcome.classList.remove("hidden");
 }
-else if (user && user.role === "admin") {
-  document.getElementById("userArea").innerText = "Welcome Admin";
-} else {
-  document.getElementById("userArea").innerText = "";
-}
+else {
+  welcome.classList.add("hidden");
+}   
