@@ -1,140 +1,60 @@
 <?php include 'templates\header.php'; ?>
 <?php include 'templates\navbar.php'; ?>
 
+<?php
+include 'C:\xampp\htdocs\Prostate_Cancer_KE\dbconfig.php';
+$events = $pdo->query("SELECT * FROM events ORDER BY event_date ASC LIMIT 3")->fetchAll(PDO::FETCH_ASSOC);
+?>
 
-     <!-- Events & Meetups -->
-    <section class="py-16 bg-gray-50" id="events">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-16 scroll-reveal">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Events & Meetups
-          </h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto serif">
-            Join our community events to learn more about prostate cancer
-            prevention, connect with healthcare professionals, and support
-            others.
-          </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Event 1 -->
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden card-hover scroll-reveal"
-          >
-            <div class="h-48 overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=Medical%20conference%20with%20doctors%20presenting%20to%20audience%2C%20healthcare%20professionals%20at%20seminar%2C%20medical%20education%20event%2C%20blue%20themed%20conference%20room%2C%20professional%20medical%20presentation%2C%20healthcare%20symposium&width=600&height=400&seq=event1&orientation=landscape"
-                alt="Free Screening Event"
-                class="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div class="p-6">
-              <div class="flex items-center mb-4">
-                <div
-                  class="w-12 h-12 flex flex-col items-center justify-center bg-primary bg-opacity-10 rounded-lg text-primary"
-                >
-                  <span class="text-sm font-bold">JUN</span>
-                  <span class="text-lg font-bold">15</span>
-                </div>
-                <div class="ml-4">
-                  <p class="text-gray-600">Thursday, 9:00 AM - 4:00 PM</p>
-                  <p class="text-gray-600">Kenyatta National Hospital</p>
-                </div>
+<section class="py-16 bg-gray-50" id="events">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+        Events & Meetups
+      </h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto serif">
+        Join our community events to learn more about prostate cancer...
+      </p>
+    </div>
+
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <?php foreach ($events as $event): ?>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+          <div class="h-48 overflow-hidden">
+            <?php if (!empty($event['image_filename'])): ?>
+              <img src="admin/uploads/<?= htmlspecialchars($event['image_filename']) ?>"
+                   alt="Event Image"
+                   class="w-full h-full object-cover object-top">
+            <?php else: ?>
+              <div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-500">
+                No Image Available
               </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-3">
-                Free Prostate Cancer Screening Day
-              </h3>
-              <p class="text-gray-600 mb-4 serif">
-                Join us for a free prostate cancer screening event. No
-                appointment necessary. First come, first served.
-              </p>
-              <a
-                href="#"
-                class="whitespace-nowrap bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all inline-block"
-                >Register</a
-              >
-            </div>
+            <?php endif; ?>
           </div>
-          <!-- Event 2 -->
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden card-hover scroll-reveal"
-          >
-            <div class="h-48 overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=Support%20group%20meeting%20with%20diverse%20men%20sitting%20in%20circle%2C%20community%20health%20discussion%2C%20emotional%20support%20session%2C%20blue%20toned%20room%2C%20caring%20environment%2C%20mens%20health%20support%20group%2C%20professional%20counseling%20setting&width=600&height=400&seq=event2&orientation=landscape"
-                alt="Support Group Meeting"
-                class="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div class="p-6">
-              <div class="flex items-center mb-4">
-                <div
-                  class="w-12 h-12 flex flex-col items-center justify-center bg-primary bg-opacity-10 rounded-lg text-primary"
-                >
-                  <span class="text-sm font-bold">JUN</span>
-                  <span class="text-lg font-bold">22</span>
-                </div>
-                <div class="ml-4">
-                  <p class="text-gray-600">Thursday, 6:00 PM - 8:00 PM</p>
-                  <p class="text-gray-600">
-                    Nairobi Hospital - Conference Room B
-                  </p>
-                </div>
+          <div class="p-6">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 flex flex-col items-center justify-center bg-primary bg-opacity-10 rounded-lg text-primary">
+                <span class="text-sm font-bold"><?= strtoupper(date('M', strtotime($event['event_date']))) ?></span>
+                <span class="text-lg font-bold"><?= date('d', strtotime($event['event_date'])) ?></span>
               </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-3">
-                Prostate Cancer Support Group
-              </h3>
-              <p class="text-gray-600 mb-4 serif">
-                Monthly support group for prostate cancer patients, survivors,
-                and their families. Share experiences and find support.
-              </p>
-              <a
-                href="#"
-                class="whitespace-nowrap bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all inline-block"
-                >Register</a
-              >
-            </div>
-          </div>
-          <!-- Event 3 -->
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden card-hover scroll-reveal"
-          >
-            <div class="h-48 overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=Educational%20workshop%20with%20doctor%20presenting%20to%20community%20members%2C%20health%20education%20session%2C%20medical%20professional%20explaining%20to%20audience%2C%20blue%20themed%20presentation%20room%2C%20healthcare%20learning%20environment%2C%20community%20health%20education&width=600&height=400&seq=event3&orientation=landscape"
-                alt="Educational Workshop"
-                class="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div class="p-6">
-              <div class="flex items-center mb-4">
-                <div
-                  class="w-12 h-12 flex flex-col items-center justify-center bg-primary bg-opacity-10 rounded-lg text-primary"
-                >
-                  <span class="text-sm font-bold">JUL</span>
-                  <span class="text-lg font-bold">08</span>
-                </div>
-                <div class="ml-4">
-                  <p class="text-gray-600">Saturday, 10:00 AM - 1:00 PM</p>
-                  <p class="text-gray-600">Aga Khan University Hospital</p>
-                </div>
+              <div class="ml-4">
+                <p class="text-gray-600"><?= date('l, g:i A', strtotime($event['start_time'])) ?> - <?= date('g:i A', strtotime($event['end_time'])) ?></p>
+                <p class="text-gray-600"><?= htmlspecialchars($event['location']) ?></p>
               </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-3">
-                Prostate Health Educational Workshop
-              </h3>
-              <p class="text-gray-600 mb-4 serif">
-                Learn about prostate health, cancer prevention, and treatment
-                options from leading urologists and oncologists.
-              </p>
-              <a
-                href="#"
-                class="whitespace-nowrap bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all inline-block"
-                >Register</a
-              >
             </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-3"><?= htmlspecialchars($event['title']) ?></h3>
+            <p class="text-gray-600 mb-4 serif"><?= htmlspecialchars($event['description']) ?></p>
+            <a href="#"
+               class="whitespace-nowrap bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 transition-all inline-block">
+              <?= $event['registration_required'] ? 'Register' : 'Learn More' ?>
+            </a>
           </div>
         </div>
-      </div>
-    </section>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</section>
 
     <!-- Support Section -->
     <section id="support" class="bg-white py-20 px-6">
