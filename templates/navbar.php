@@ -48,7 +48,7 @@
         class="container mx-auto px-6 py-3 flex justify-between items-center"
       >
         <div class="flex items-center">
-          <a href="index.php" class="text-2xl font-['Pacifico'] text-primary"
+          <a href="index.php" class="text-2xl font-['cambria'] text-primary"
             >ProstateCare</a
           >
         </div>
@@ -260,8 +260,10 @@
             >
               Sign Up
             </button>
-            <button id="googleSignInBtn" class="w-full flex items-center justify-center gap-2 bg-white text-gray-700 border border-gray-300 px-4 py-2 rounded hover:bg-gray-100 transition-all">
-              <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google Logo" class="w-5 h-5" />
+            <button 
+            type="button"
+            class="google-signin-btn w-full flex items-center justify-center gap-2 bg-white text-gray-700 border border-gray-300 px-4 py-2 rounded hover:bg-gray-100 transition-all">
+              <img src="assets/img/google-icon.png" alt="Google Logo" class="w-5 h-5" />
               Continue with Google
             </button>
 

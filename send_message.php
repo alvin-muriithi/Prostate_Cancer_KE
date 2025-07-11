@@ -26,16 +26,15 @@ try {
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com'; 
     $mail->SMTPAuth = true;
-    $mail->Username = 'muriithialvin06@gmail.com';
-    $mail->Password = 'ioxv pffb wgdv sotd';
+    $mail->Username = 'prostatecarekenya@gmail.com';
+    $mail->Password = 'ugwv hfng qoge kuvz';
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
     // Email settings
-    $mail->setFrom($email, $name);
-    $mail->addAddress('support@prostatecarekenya.org', 'ProstateCare Kenya');
-    $mail->addReplyTo($email, $name);
-
+    $mail->setFrom('prostatecarekenya@gmail.com', 'ProstateCare Kenya');
+    $mail->addAddress('prostatecarekenya@gmail.com'); 
+    $mail->addReplyTo($email, $name); 
     $mail->isHTML(true);
     $mail->Subject = "Contact Form: $subject";
     $mail->Body = "

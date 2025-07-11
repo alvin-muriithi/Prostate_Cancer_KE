@@ -6,6 +6,7 @@
       class="hero-section min-h-screen flex items-center pt-20"
       id="about"
     >
+    <img src="assets/img/A joyful Black family on a Caribbean beach vacation. Children and parents are laughing, building sandcastles, and relaxing under palm trees. The ocean breeze flows gently, tropical plants sway in the background. Cin.png" alt="Hero Background" class="absolute top-0 left-0 w-full h-full object-center object-cover opacity-20">
       <div class="container mx-auto px-6 w-full">
         <div class="max-w-2xl">
           <h1
@@ -20,16 +21,19 @@
           <div
             class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
           >
-            <a
+        
+             <a
               href="education.php"
               class="whitespace-nowrap bg-primary text-white px-8 py-3 !rounded-button hover:bg-opacity-90 transition-all text-center"
-              >Learn More</a
-            >
+              >Learn More</a>
+          
+        
             <a
               href="index.php#contact"
               class="whitespace-nowrap border-2 border-primary text-primary px-8 py-3 !rounded-button hover:bg-primary hover:text-white transition-all text-center"
-              >Contact Us</a
-            >
+              >Contact Us</a>
+        
+            
           </div>
         </div>
       </div>
@@ -192,11 +196,11 @@
             </div>
             <div class="flex items-center space-x-4">
               <img
-                src="https://readdy.ai/api/search-image?query=M-Pesa%20logo%2C%20simple%20clean%20professional%20logo%20on%20white%20background%2C%20payment%20system%20logo%2C%20mobile%20money%20service%2C%20financial%20technology%20icon%2C%20professional%20brand%20identity&width=120&height=60&seq=mpesa&orientation=landscape"
+                src="assets/img/How To Reverse Mpesa Transaction 2022 And How Long It Takes.jpeg"
                 alt="M-Pesa"
                 class="h-10 object-contain"
               />
-              <p class="text-gray-600">M-Pesa donation method below</p>
+              <p class="text-gray-600">Donate via M-pesa?</p>
             </div>
           </div>
           <div class="bg-gray-50 p-8 rounded-lg shadow-md scroll-reveal">
@@ -392,7 +396,7 @@
                   </div>
                   <div class="ml-4">
                     <h4 class="text-lg font-semibold text-gray-800">Address</h4>
-                    <p class="text-gray-600">Kenyatta Avenue, Nairobi, Kenya</p>
+                    <p class="text-gray-600"> Ole Sangale Rd, Nairobi, Kenya</p>
                   </div>
                 </div>
                 <div class="flex items-start">
@@ -403,7 +407,7 @@
                   </div>
                   <div class="ml-4">
                     <h4 class="text-lg font-semibold text-gray-800">Phone</h4>
-                    <p class="text-gray-600">+254 712 345 678</p>
+                    <p class="text-gray-600">+254 715 089 915</p>
                   </div>
                 </div>
                 <div class="flex items-start">
@@ -414,7 +418,11 @@
                   </div>
                   <div class="ml-4">
                     <h4 class="text-lg font-semibold text-gray-800">Email</h4>
-                    <p class="text-gray-600">info@prostatecarekenya.org</p>
+                    <p class="text-gray-600">
+                      <a href="mailto:prostatecarekenya@gmail.    com" class="text-blue-600 hover:underline">
+                        prostatecarekenya@gmail.com
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -519,7 +527,7 @@
                 id="toastSuccess"
                 class="hidden mt-4 bg-green-100 border border-green-300 text-green-700 px-4 py-3 rounded-md transition"
               >
-                🎉 You're successfully subscribed to the newsletter!
+                 You're successfully subscribed to the newsletter!
               </div>
             </div>
           </section>

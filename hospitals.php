@@ -21,7 +21,7 @@
           >
             <div class="h-48 overflow-hidden">
               <img
-                src="https://readdy.ai/api/search-image?query=Modern%20hospital%20building%20exterior%2C%20Kenyan%20healthcare%20facility%2C%20professional%20medical%20center%20architecture%2C%20blue%20sky%2C%20clean%20medical%20facility%2C%20contemporary%20hospital%20design%2C%20welcoming%20entrance&width=600&height=400&seq=hospital1&orientation=landscape"
+                src="assets/img/knh.png"
                 alt="Kenyatta National Hospital"
                 class="w-full h-full object-cover object-top"
               />
@@ -59,7 +59,15 @@
                   >
                     <i class="ri-global-line"></i>
                   </div>
-                  <p class="ml-2 text-gray-600">knh.or.ke</p>
+                  <p></p>
+                  <a 
+                    href="https://knh.or.ke/" 
+                    class="ml-2 text-gray-600 hover:text-primary transition-colors"
+                    rel="noopener noreferrer"
+                    target="blank"
+                  >
+                    knh.or.ke 
+                  </a>
                 </div>
               </div>
             </div>
@@ -70,7 +78,7 @@
           >
             <div class="h-48 overflow-hidden">
               <img
-                src="https://readdy.ai/api/search-image?query=Modern%20hospital%20building%20with%20glass%20facade%2C%20premium%20healthcare%20facility%2C%20professional%20medical%20center%20architecture%2C%20blue%20sky%2C%20clean%20medical%20facility%2C%20contemporary%20hospital%20design%2C%20welcoming%20entrance&width=600&height=400&seq=hospital2&orientation=landscape"
+                src="assets/img/aga khan.png"
                 alt="Aga Khan University Hospital"
                 class="w-full h-full object-cover object-top"
               />
@@ -108,7 +116,15 @@
                   >
                     <i class="ri-global-line"></i>
                   </div>
-                  <p class="ml-2 text-gray-600">hospitals.aku.edu</p>
+                  <p></p>
+                  <a 
+                    href="https://hospitals.aku.edu/nairobi/Pages/default.aspx" 
+                    class="ml-2 text-gray-600 hover:text-primary transition-colors"
+                    rel="noopener noreferrer"
+                    target="blank"
+                  >
+                    hospitals.aku.edu 
+                  </a>
                 </div>
               </div>
             </div>
@@ -119,7 +135,7 @@
           >
             <div class="h-48 overflow-hidden">
               <img
-                src="https://readdy.ai/api/search-image?query=Modern%20hospital%20building%20with%20landscaped%20entrance%2C%20premium%20healthcare%20facility%2C%20professional%20medical%20center%20architecture%2C%20blue%20sky%2C%20clean%20medical%20facility%2C%20contemporary%20hospital%20design%2C%20welcoming%20entrance&width=600&height=400&seq=hospital3&orientation=landscape"
+                src="assets/img/nairobi hospital.png"
                 alt="Nairobi Hospital"
                 class="w-full h-full object-cover object-top"
               />
@@ -157,7 +173,15 @@
                   >
                     <i class="ri-global-line"></i>
                   </div>
-                  <p class="ml-2 text-gray-600">nairobihospital.org</p>
+                  <p></p>
+                  <a 
+                    href="https://thenairobihosp.org/" 
+                    class="ml-2 text-gray-600 hover:text-primary transition-colors"
+                    rel="noopener noreferrer"
+                    target="blank"
+                  >
+                    thenairobihosp.org 
+                  </a>
                 </div>
               </div>
             </div>
@@ -168,7 +192,7 @@
           >
             <div class="h-48 overflow-hidden">
               <img
-                src="https://readdy.ai/api/search-image?query=Modern%20hospital%20building%20with%20circular%20driveway%2C%20premium%20healthcare%20facility%2C%20professional%20medical%20center%20architecture%2C%20blue%20sky%2C%20clean%20medical%20facility%2C%20contemporary%20hospital%20design%2C%20welcoming%20entrance&width=600&height=400&seq=hospital4&orientation=landscape"
+                src="assets/img/mp shah.png"
                 alt="MP Shah Hospital"
                 class="w-full h-full object-cover object-top"
               />
@@ -206,7 +230,14 @@
                   >
                     <i class="ri-global-line"></i>
                   </div>
-                  <p class="ml-2 text-gray-600">mpshahhosp.org</p>
+                  <a 
+                    href="https://mpshahhosp.org/" 
+                    class="ml-2 text-gray-600 hover:text-primary transition-colors"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    mpshahhosp.org
+                  </a>
                 </div>
               </div>
             </div>

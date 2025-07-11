@@ -1,5 +1,5 @@
 <?php include 'C:\xampp\htdocs\Prostate_Cancer_KE\admin\templates\header.php'; 
-include 'C:\xampp\htdocs\Prostate_Cancer_KE\dbconfig.php';
+include 'C:/xampp/htdocs/Prostate_Cancer_KE/dbconfig.php';
 
 // Fetch all research articles
 $articles = $pdo->query("SELECT * FROM research_articles ORDER BY created_at DESC")->fetchAll(PDO::FETCH_ASSOC);
@@ -8,9 +8,8 @@ $articles = $pdo->query("SELECT * FROM research_articles ORDER BY created_at DES
 <body class="p-6">
     <h1 class="text-2xl font-bold text-blue-800 mb-4">Admin Dashboard</h1>
     <div class="flex space-x-4 mb-6">
-        <button onclick="toggleForm('donations')" class="btn bg-blue-200 text-blue-800 px-4 py-2 rounded">Track Donations</button>
+        
         <button onclick="toggleForm('research')" class="btn bg-blue-200 text-blue-800 px-4 py-2 rounded">Add Research Article</button>
-        <button onclick="toggleForm('support')" class="btn bg-blue-200 text-blue-800 px-4 py-2 rounded">Add Support Group</button>
         <button onclick="toggleForm('survivor')" class="btn bg-green-200 text-green-800 px-4 py-2 rounded">Add Survivor Story</button>
         <button onclick="toggleForm('event')" class="btn bg-blue-200 text-blue-800 px-4 py-2 rounded">Add New Event</button>
     </div>
@@ -49,13 +48,6 @@ $articles = $pdo->query("SELECT * FROM research_articles ORDER BY created_at DES
       </form>
     </div>
 
-    <div id="support-form" class="form-section hidden">
-        <form action="add_support.php" method="POST" class="space-y-4">
-            <input type="text" name="name" placeholder="Group Name" class="w-full p-2 border rounded" required>
-            <input type="text" name="location" placeholder="Location" class="w-full p-2 border rounded" required>
-            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Submit</button>
-        </form>
-    </div>
 
     <div id="survivor-form" class="form-section hidden">
       <form action="add_story.php"method="POST" enctype="multipart/form-data" class="bg-white p-6 rounded-lg shadow-md space-y-6">

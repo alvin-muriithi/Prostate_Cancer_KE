@@ -25,7 +25,7 @@ $articles = $pdo->query("SELECT * FROM research_articles ORDER BY created_at DES
           >
             <div class="h-48 overflow-hidden">
               <img
-                src="https://readdy.ai/api/search-image?query=3D%20medical%20illustration%20of%20prostate%20gland%20with%20highlighted%20cancer%20cells%2C%20anatomical%20visualization%2C%20educational%20medical%20diagram%2C%20detailed%20cellular%20structure%2C%20professional%20medical%20textbook%20quality%2C%20blue%20background%2C%20high%20detail&width=600&height=400&seq=prostate2&orientation=landscape"
+                src="assets/img/Prostate cancer is one of the most common diseases….jpeg"
                 alt="Prostate Cancer Illustration"
                 class="w-full h-full object-cover object-top"
               />
@@ -71,7 +71,7 @@ $articles = $pdo->query("SELECT * FROM research_articles ORDER BY created_at DES
           >
             <div class="h-48 overflow-hidden">
               <img
-                src="https://readdy.ai/api/search-image?query=African%20man%20discussing%20with%20doctor%20about%20health%20risks%2C%20medical%20consultation%2C%20healthcare%20professional%20explaining%20medical%20chart%2C%20professional%20clinical%20setting%2C%20blue%20medical%20office%2C%20preventive%20healthcare%20discussion%2C%20patient%20education%20moment&width=600&height=400&seq=prostate3&orientation=landscape"
+                src="assets/img/Every individual man has different risk factors….jpeg"
                 alt="Risk Factors"
                 class="w-full h-full object-cover object-top"
               />
@@ -115,7 +115,7 @@ $articles = $pdo->query("SELECT * FROM research_articles ORDER BY created_at DES
           >
             <div class="h-48 overflow-hidden">
               <img
-                src=" "
+                src="assets/img/Prostate Cancer_ Symptoms, Causes and Support… (1).jpeg"
                 alt="Symptoms"
                 class="w-full h-full object-cover object-top"
               />
@@ -152,7 +152,7 @@ $articles = $pdo->query("SELECT * FROM research_articles ORDER BY created_at DES
           >
             <div class="h-48 overflow-hidden">
               <img
-                src="https://readdy.ai/api/search-image?query=Healthy%20lifestyle%20choices%20for%20men%2C%20fresh%20vegetables%20and%20fruits%2C%20man%20exercising%20outdoors%2C%20Mediterranean%20diet%20plate%2C%20preventive%20healthcare%20visualization%2C%20blue%20sky%20background%2C%20healthy%20living%20concept%2C%20professional%20health%20photography&width=600&height=400&seq=prostate5&orientation=landscape"
+                src="assets/img/Prostate cancer is known as the silent killer of….jpeg"
                 alt="Prevention"
                 class="w-full h-full object-cover object-top"
               />
@@ -200,65 +200,57 @@ $articles = $pdo->query("SELECT * FROM research_articles ORDER BY created_at DES
             Educational Resources
           </h2>
           <p class="text-lg text-gray-600 max-w-3xl mx-auto serif">
-            Visual resources to help you better understand prostate cancer, its
-            detection, and treatment options.
+            Visual resources to help you better understand prostate cancer, and how it develoops in the human body.
           </p>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+        <div class="max-w-7xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          
           <!-- Video Section -->
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden scroll-reveal"
-          >
-            <div class="aspect-w-16 aspect-h-9 relative">
-              <div class="w-full h-0 pb-[56.25%] relative bg-gray-200">
-                <div class="absolute inset-0 flex items-center justify-center">
-                  <div class="text-center">
-                    <div
-                      class="w-20 h-20 flex items-center justify-center mx-auto mb-4 bg-primary bg-opacity-20 rounded-full"
-                    >
-                      <i class="ri-video-line ri-2x text-primary"></i>
-                    </div>
-                    <p class="text-gray-600">Video player placeholder</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800 mb-3">
-                Understanding Prostate Cancer Screening
-              </h3>
-              <p class="text-gray-600 serif">
-                This educational video explains the importance of regular
-                prostate cancer screening, the different screening methods
-                available, and what to expect during a screening appointment.
-              </p>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="w-full h-0 pb-[56.25%] relative bg-gray-200">
+              <video
+                class="absolute top-0 left-0 w-full h-full object-cover"
+                controls
+                poster="assets/img/thumbnail.jpeg"
+              >
+                <source src="assets/img/video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
-          <!-- Infographic -->
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden scroll-reveal"
-          >
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800 mb-6">
-                Prostate Cancer: Facts & Figures
-              </h3>
-              <div class="infographic-container">
-                <img
-                  src="https://readdy.ai/api/search-image?query=Medical%20infographic%20about%20prostate%20cancer%20statistics%20and%20facts%2C%20professional%20data%20visualization%2C%20educational%20healthcare%20chart%2C%20blue%20color%20scheme%2C%20clean%20modern%20design%2C%20statistical%20information%20layout%2C%20medical%20information%20design%2C%20high%20quality%20information%20design&width=800&height=600&seq=prostate6&orientation=landscape"
-                  alt="Prostate Cancer Infographic"
-                  class="w-full rounded-lg"
-                />
-              </div>
-              <div class="mt-6">
-                <p class="text-gray-600 serif">
-                  This infographic provides key statistics about prostate cancer
-                  in Kenya, including prevalence rates, survival statistics, and
-                  the impact of early detection on treatment outcomes.
-                </p>
-              </div>
-            </div>
+
+          <!-- Video Description Section -->
+          <div>
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">
+              Video Summary: Understanding Prostate Cancer
+            </h2>
+            <p class="text-gray-700 mb-4">
+              This 3D animated video provides a visual explanation of the development and spread of prostate cancer.
+            </p>
+            <ul class="list-disc pl-6 text-gray-700 space-y-2">
+              <li>
+                <strong>Anatomy of the Prostate:</strong> The video begins by showing the prostate gland’s location beneath the bladder and surrounding the urethra. It explains the prostate’s function in producing fluid that nourishes and transports sperm.
+              </li>
+              <li>
+                <strong>Formation of Cancer:</strong> It illustrates how abnormal cells start growing within the prostate, forming a tumor. These cancerous cells divide uncontrollably and begin to invade surrounding tissues.
+              </li>
+              <li>
+                <strong>Metastasis:</strong> The video demonstrates how prostate cancer can spread to other parts of the body such as bones and lymph nodes via the bloodstream and lymphatic system.
+              </li>
+              <li>
+                <strong>Educational Purpose:</strong> The animation helps viewers understand the biological progression of prostate cancer, making it ideal for patients, students, or general public education.
+              </li>
+            </ul>
           </div>
+
         </div>
+      </div>
+
+        
+
+
       </div>
     </section>
     <!-- Research Section -->
@@ -277,6 +269,17 @@ $articles = $pdo->query("SELECT * FROM research_articles ORDER BY created_at DES
   </div>
 </section>
 <script>
+document.querySelectorAll(".education-toggle").forEach(button => {
+  button.addEventListener("click", () => {
+    const targetId = button.getAttribute("data-target");
+    const target = document.getElementById(targetId);
+    if (target) {
+      target.classList.toggle("hidden");
+      button.querySelector("i").classList.toggle("ri-arrow-down-line");
+      button.querySelector("i").classList.toggle("ri-arrow-right-line");
+    }
+  });
+});
 // Initialize AOS (Animate On Scroll) library for animations
 AOS.init({ duration: 800, once: true });
 
@@ -291,10 +294,10 @@ articles.forEach((article, index) => {
   card.setAttribute("data-aos-delay", index * 100);
 
   const image = article.image_filename
-    ? `uploads/research_images/${article.image_filename}`
+    ? `admin/uploads/research_images/${article.image_filename}`
     : "https://i.pravatar.cc/100?u=" + encodeURIComponent(article.researcher);
 
-  const pdf = `uploads/research_pdfs/${article.pdf_filename}`;
+  const pdf = `admin/uploads/research_pdfs/${article.pdf_filename}`;
 
   card.innerHTML = `
     <div class="flex items-start gap-4">
@@ -319,14 +322,18 @@ articles.forEach((article, index) => {
 });
 
 document.addEventListener("click", function (e) {
-  if (e.target.classList.contains("toggle-btn")) {
-    const details = e.target.closest("div").querySelector(".article-details");
-    details.classList.toggle("hidden");
-    e.target.textContent = details.classList.contains("hidden")
-      ? "Read Full Summary"
-      : "Show Less";
+  const btn = e.target.closest(".toggle-btn");
+  if (btn) {
+    const details = btn.closest("div").parentElement.querySelector(".article-details");
+    if (details) {
+      details.classList.toggle("hidden");
+      btn.textContent = details.classList.contains("hidden")
+        ? "Read Full Summary"
+        : "Show Less";
+    }
   }
 });
+
 </script>
 
 

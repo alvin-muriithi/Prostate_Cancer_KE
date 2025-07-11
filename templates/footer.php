@@ -126,7 +126,7 @@
                   <i class="ri-map-pin-line"></i>
                 </div>
                 <span class="ml-2 text-gray-300"
-                  >Kenyatta Avenue, Nairobi, Kenya</span
+                  >Ole Sangale Rd, Nairobi, Kenya</span
                 >
               </li>
               <li class="flex items-start">
@@ -135,7 +135,7 @@
                 >
                   <i class="ri-phone-line"></i>
                 </div>
-                <span class="ml-2 text-gray-300">+254 712 345 678</span>
+                <span class="ml-2 text-gray-300">+254 715 089 915</span>
               </li>
               <li class="flex items-start">
                 <div
@@ -143,9 +143,11 @@
                 >
                   <i class="ri-mail-line"></i>
                 </div>
-                <span class="ml-2 text-gray-300"
-                  >info@prostatecarekenya.org</span
-                >
+                <span class="ml-2 text-gray-300 hover:text-primary transition-colors">
+                  <a href="mailto:prostatecarekenya@gmail.    com">
+                      prostatecarekenya@gmail.com
+                      </a>
+                </span>
               </li>
             </ul>
           </div>

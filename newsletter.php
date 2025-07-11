@@ -21,15 +21,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['subscriber_email'])) 
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com'; 
         $mail->SMTPAuth = true;
-        $mail->Username = 'muriithialvin06@gmail.com';
-        $mail->Password = 'ioxv pffb wgdv sotd';
+        $mail->Username = 'prostatecarekenya@gmail.com';
+        $mail->Password = 'ugwv hfng qoge kuvz';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
         // Message
         $mail->clearAddresses(); // clear previous address
         $mail->addAddress($email); // send to subscriber now
-        $mail->Subject = 'Welcome to ProstateCare Newsletter!';
+        $mail->Subject = 'ProstateCare Kenya Newsletter!';
 
         // Load HTML template content
         $newsletterTemplate = file_get_contents("newsletter-template.html");
